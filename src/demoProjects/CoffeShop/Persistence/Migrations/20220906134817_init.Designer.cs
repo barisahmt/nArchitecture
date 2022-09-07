@@ -23,7 +23,7 @@ namespace Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Domain.Entities.Coffe", b =>
+            modelBuilder.Entity("Kodlamaio.Domain.Entities.Coffe", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace Persistence.Migrations
                     b.ToTable("Coffe");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Snack", b =>
+            modelBuilder.Entity("Kodlamaio.Domain.Entities.Snack", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,7 +56,7 @@ namespace Persistence.Migrations
                     b.ToTable("Snack");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Tea", b =>
+            modelBuilder.Entity("Kodlamaio.Domain.Entities.Tea", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

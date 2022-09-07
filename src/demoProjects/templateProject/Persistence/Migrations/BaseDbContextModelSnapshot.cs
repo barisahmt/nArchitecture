@@ -21,7 +21,7 @@ namespace Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Domain.Entities.SomeFeatureEntity", b =>
+            modelBuilder.Entity("Kodlamaio.Domain.Entities.SomeFeatureEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

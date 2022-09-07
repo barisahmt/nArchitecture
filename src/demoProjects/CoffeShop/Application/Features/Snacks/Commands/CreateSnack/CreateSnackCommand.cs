@@ -13,7 +13,8 @@ namespace Application.Features.Coffes.Commands.CreateSnack
 {
     public class CreateSnackCommand : IRequest<CreatedSnackDto>
     {
-        public int Id { get; set; }
+        public string Name { get; set; }
+    
 
         public class CreateSnackCommandHandler :IRequestHandler<CreateSnackCommand , CreatedSnackDto>
         {
@@ -28,9 +29,11 @@ namespace Application.Features.Coffes.Commands.CreateSnack
             public async Task<CreatedSnackDto> Handle(CreateSnackCommand request, CancellationToken cancellationToken)
             {
                Snack mappedSnack = _mapper.Map<Snack>(request);
+
                Snack createdSnack = await _snackRepository.AddAsync(mappedSnack);
-                CreatedSnackDto createdSnackDto = _mapper.Map<CreatedSnackDto>(createdSnack);
-                return createdSnackDto; 
+
+               CreatedSnackDto createdSnackDto = _mapper.Map<CreatedSnackDto>(createdSnack);
+               return createdSnackDto; 
             }
         }
     }

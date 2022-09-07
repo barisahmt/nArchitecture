@@ -15,6 +15,7 @@ namespace Application.Features.Coffes.Commands.CreateCoffe
     public class CreateCoffeCommand : IRequest<CreatedCoffeDto>
     {
         public string Name { get; set; }
+        public int Price { get; set; }
 
         public class CreateCoffeCommandHandler : IRequestHandler<CreateCoffeCommand, CreatedCoffeDto>
         {

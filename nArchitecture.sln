@@ -49,15 +49,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\demoProjects\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kodlama.io.Devs", "Kodlama.io.Devs", "{A083F251-D16D-4A33-9175-F2F282555A67}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\demoProjects\Kodlama.io.Devs\Application\Application.csproj", "{0EF1C2C0-AA35-4704-BA3C-930DEC53F00A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlamaio.Application", "src\demoProjects\Kodlama.io.Devs\Kodlamaio.Application\Kodlamaio.Application.csproj", "{0EF1C2C0-AA35-4704-BA3C-930DEC53F00A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\demoProjects\Kodlama.io.Devs\Domain\Domain.csproj", "{F136F3B2-1DCE-4349-9D89-27C02A31F8A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlamaio.Domain", "src\demoProjects\Kodlama.io.Devs\Kodlamaio.Domain\Kodlamaio.Domain.csproj", "{F136F3B2-1DCE-4349-9D89-27C02A31F8A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\demoProjects\Kodlama.io.Devs\Infrastructure\Infrastructure.csproj", "{4F9108F2-57F1-4BED-BE63-E96797F0E70D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlamaio.Infrastructure", "src\demoProjects\Kodlama.io.Devs\Kodlamaio.Infrastructure\Kodlamaio.Infrastructure.csproj", "{4F9108F2-57F1-4BED-BE63-E96797F0E70D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "src\demoProjects\Kodlama.io.Devs\Persistence\Persistence.csproj", "{B39C13D4-B2EB-48E8-9CD8-5497C1A51189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlamaio.Persistence", "src\demoProjects\Kodlama.io.Devs\Kodlamaio.Persistence\Kodlamaio.Persistence.csproj", "{B39C13D4-B2EB-48E8-9CD8-5497C1A51189}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\demoProjects\Kodlama.io.Devs\WebAPI\WebAPI\WebAPI.csproj", "{1D78E29A-00D0-4CAD-B385-4235B39302D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlamaio.WebAPI", "src\demoProjects\Kodlama.io.Devs\WebAPI\Kodlamaio.WebAPI\Kodlamaio.WebAPI.csproj", "{1D78E29A-00D0-4CAD-B385-4235B39302D9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoffeShop", "CoffeShop", "{226C5548-2A96-4B2B-86C5-991A2F8413EB}"
 EndProject
