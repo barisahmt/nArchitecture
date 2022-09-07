@@ -3,6 +3,7 @@ using Application.Features.programmingLanguage.Commands.DeleteProgrammingLanguag
 using Application.Features.programmingLanguage.Commands.UpdateProgrammingLanguage;
 using Application.Features.programmingLanguage.Dtos;
 using Application.Features.programmingLanguage.Models;
+using Application.Features.programmingLanguage.Queries.GetByIdProgrammingLanguage;
 using Application.Features.programmingLanguage.Queries.GetListProgrammingLanguage;
 using Core.Application.Requests;
 using MediatR;
@@ -40,6 +41,13 @@ namespace WebAPI.Controllers
             UpdatedProgrammingLanguageDto result = await  Mediator.Send(updateProgrammingLanguageCommand);
             return Ok(result);
             
+        }
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetById([FromRoute] GetByIdProgrammingLanguageQuery getByIdProgrammingLanguageQuery)
+        {
+            GetByIdProgrammingLanguageDto result = await Mediator.Send(getByIdProgrammingLanguageQuery);
+            return Ok(result);
+
         }
     }
 }

@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.1" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Coffes\Constants\" />
+    <Folder Include="Features\Coffes\Models\" />
+    <Folder Include="Features\Coffes\Rules\" />
+    <Folder Include="Features\Snacks\Constants\" />
+    <Folder Include="Features\Snacks\Models\" />
+    <Folder Include="Features\Snacks\Queries\" />
+    <Folder Include="Features\Snacks\Rules\" />
+    <Folder Include="Features\Teas\Commands\" />
+    <Folder Include="Features\Teas\Constants\" />
+    <Folder Include="Features\Teas\Dtos\" />
+    <Folder Include="Features\Teas\Models\" />
+    <Folder Include="Features\Teas\Queries\" />
+    <Folder Include="Features\Teas\Rules\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\corePackages\Core.Application\Core.Application.csproj" />
+    <ProjectReference Include="..\..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>

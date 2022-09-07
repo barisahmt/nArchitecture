@@ -33,6 +33,7 @@ namespace Application.Features.programmingLanguage.Commands.DeleteProgrammingLan
                 ProgrammingLanguage language = await _programmingLanguageRepository.GetAsync(l => l.Id == request.Id);
 
                  _programmingLanguageBusinessRules.ProgrammingLanguageCheckId(language);
+
                 ProgrammingLanguage deleteProgrammingLanguage = await _programmingLanguageRepository.DeleteAsync(language);
                 DeletedProgrammingLanguageDto deleteProgrammingLanguageDto = _mapper.Map<DeletedProgrammingLanguageDto>(deleteProgrammingLanguage);
                 return deleteProgrammingLanguageDto;

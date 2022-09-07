@@ -3,6 +3,7 @@ using Application.Features.programmingLanguage.Commands.DeleteProgrammingLanguag
 using Application.Features.programmingLanguage.Commands.UpdateProgrammingLanguage;
 using Application.Features.programmingLanguage.Dtos;
 using Application.Features.programmingLanguage.Models;
+using Application.Features.programmingLanguage.Queries.GetByIdProgrammingLanguage;
 using AutoMapper;
 using Core.Persistence.Paging;
 using Domain.Entities;
@@ -26,6 +27,8 @@ namespace Application.Features.Brands.Profiles
             CreateMap<ProgrammingLanguage, DeleteProgrammingLanguageCommand>().ReverseMap();
             CreateMap<ProgrammingLanguage, UpdatedProgrammingLanguageDto>().ReverseMap();
             CreateMap<ProgrammingLanguage, UpdateProgrammingLanguageCommand>().ReverseMap();
+            CreateMap<ProgrammingLanguage, GetByIdProgrammingLanguageDto>().ReverseMap();
+            CreateMap<ProgrammingLanguage, GetByIdProgrammingLanguageQuery>().ReverseMap();
 
 
         }
