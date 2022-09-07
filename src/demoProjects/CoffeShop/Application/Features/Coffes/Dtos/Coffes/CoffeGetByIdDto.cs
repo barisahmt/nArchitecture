@@ -1,16 +1,15 @@
-﻿using Core.Persistence.Repositories;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Entities
+namespace Application.Features.Coffes.Dtos.Coffes
 {
-    public class Snack:Entity
+    public class CoffeGetByIdDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Price { get; set; }
+        public string Price { get; set; }
     }
 }

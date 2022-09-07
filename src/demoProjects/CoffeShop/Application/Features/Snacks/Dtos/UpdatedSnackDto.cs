@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Coffes.Dtos.Coffes
+namespace Application.Features.Snacks.Dtos
 {
-    public class GetByIdCoffeDto
+    public class UpdatedSnackDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Price { get; set; }
+        public int Price { get; set; }
     }
 }

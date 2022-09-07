@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Snacks.Dtos
+namespace Application.Features.Coffes.Dtos.Coffes
 {
-    public class UpdatedSnackName
+    public class CoffeListDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

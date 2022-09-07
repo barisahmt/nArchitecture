@@ -14,7 +14,6 @@ namespace Application.Features.Coffes.Commands.DeleteCoffe
 {
     public class DeleteCoffeCommand : IRequest<DeletedCoffeDto>
     {
-        public string Name { get; set; }
         public int Id { get; set; }
 
         public class DeleteCoffeCommandHandler : IRequestHandler<DeleteCoffeCommand, DeletedCoffeDto>
