@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.programmingLanguage.Commands.createProgrammingLanguage
 {
-    public class CreateProgrammingLanguageCommand:IRequest<CreatedProgrammingLanguageDto>
+    public class  CreateProgrammingLanguageCommand:IRequest<CreatedProgrammingLanguageDto>
     {
         public string Name { get; set; }
 

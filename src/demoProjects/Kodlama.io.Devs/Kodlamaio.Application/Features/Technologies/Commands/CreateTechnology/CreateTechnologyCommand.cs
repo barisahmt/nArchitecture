@@ -8,7 +8,6 @@ namespace Application.Features.Technologies.Commands.CreateTechnology;
 
 public class CreateTechnologyCommand : IRequest<CreatedTechnologyDto>
 {
-    public int Id { get; set; }
     public string Name { get; set; }
     
     public class CreateTechnologyCommandHandler : IRequestHandler<CreateTechnologyCommand, CreatedTechnologyDto>
